@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      media="screen and (max-width: 768px)"
-      href="css/style-mobile.css"
-    />
-  </head>
-  <body>
-    <h1>Ejercicio menú</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Ejercicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Ejercicio Menú</h1>
     <form>
-      <select id="menu">
-        <option value="" selected disabled hidden>
-          Selecciona una opción del menú
-        </option>
-        <option value="1">Helado</option>
-        <option value="2">Hamburguesa</option>
-        <option value="3">Perro caliente</option>
-        <option value="4">Ensalada</option>
-      </select>
-
-      <button id="btn" class="btn">Ver precio</button>
+        <label for="menu">Selecciona una opción del menú:</label>
+        <select id="menu">
+            <option value="" selected disabled hidden>Selecciona una opción del menú</option>
+            <option value="1">Hamburguesa</option>
+            <option value="2">Perro caliente</option>
+            <option value="3">Helado</option>
+            <option value="4">Ensalada</option>
+            <option value="combo1">Combo Perro + Ensalada</option>
+            <option value="combo2">Combo Helado + Hamburguesa</option>
+        </select>
+        <button id="btn" type="button">Ver precio</button>
     </form>
 
     <div id="item" class="item"></div>
 
-    <script src="javascript/ejercicio-menu.js"></script>
-  </body>
+    <script type="module" src="javascript/main.js"></script>
+</body>
 </html>
